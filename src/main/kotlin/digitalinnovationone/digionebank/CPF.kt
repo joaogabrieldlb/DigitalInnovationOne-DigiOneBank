@@ -13,8 +13,8 @@ class CPF(private val cpf: String) {
 //        this.cpf = cpf
 //    }
 
-//    private isCPF(cpf: String): Boolean {
-//        return false
-//    }
+    override fun toString(): String {
+        return this.cpf
+    }
     
 }
