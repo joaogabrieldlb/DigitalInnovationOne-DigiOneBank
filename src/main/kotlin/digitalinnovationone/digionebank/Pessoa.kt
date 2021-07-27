@@ -1,10 +1,8 @@
 package digitalinnovationone.digionebank
 
-class Pessoa(
-    private var cpf: CPF,
-    private var nome: String
+open class Pessoa(
+    open val nome: String,
+    open val cpf: CPF
 ) {
-
-    fun pessoaInfo() = "$nome e $cpf"
-
+    fun pessoaInfo() = "$nome - $cpf"
 }
